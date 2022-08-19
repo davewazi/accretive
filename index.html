@@ -43,14 +43,45 @@
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         font-size: 16px;
       }
+      .title img{
+        width: 350px;
+      }
     </style>
   </head>
   <body>
     <div class="text">
-      <h1 class="title">ACCRETIVE</h1>
+      <div class="title">
+        <img id="logo" src="black-accretive.svg" alt="logo">
+      </div>
       <div class="mail">
         <a href="mailto:info@accretive.com">info@accretive.com</a>
       </div>
     </div>
+    <script>
+      // check time to dark mode for the page
+      var d = new Date();
+      var n = d.getHours();
+      if (n > 6 && n < 17) {
+        document.body.style.backgroundColor = "#fff";
+        document.body.style.color = "#333";        
+        var a = document.querySelectorAll("a");
+        for (var i = 0; i < a.length; i++) {
+          a[i].style.color = "#333";
+        }
+        // logo
+        var logo = document.getElementById("logo");
+        logo.src = "black-accretive.svg";
+      } else{
+        document.body.style.backgroundColor = "#000";
+        document.body.style.color = "#fff";
+        var a = document.querySelectorAll("a");
+        for (var i = 0; i < a.length; i++) {
+          a[i].style.color = "#fff";
+        }
+        // logo
+        var logo = document.getElementById("logo");
+        logo.src = "white-accretive.svg";
+      }
+    </script>
   </body>
 </html>
