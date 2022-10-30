@@ -1,350 +1,3 @@
-/* body {
-    margin: 0;
-    line-height: normal;
-}
-
-.rectangle-div {
-    position: absolute;
-    top: 410px;
-    left: 0;
-    background-color: var(--color-white);
-    width: 1440px;
-    height: 410px;
-}
-
-.have-a-question-or-want-to-lea {
-    position: absolute;
-    top: 77px;
-    left: 50px;
-    line-height: 42px;
-    color: #000;
-    display: inline-block;
-    width: 681px;
-}
-
-.line-div {
-    position: absolute;
-    top: 300.75px;
-    left: 49.75px;
-    border-top: 0.5px solid var(--color-gray-300);
-    box-sizing: border-box;
-    width: 1340.5px;
-    height: 0.5px;
-}
-
-.all-rights-reserved,
-.copyright-accretive-inc {
-    position: absolute;
-    top: 0;
-    left: 0;
-    line-height: 12px;
-    display: inline-block;
-}
-
-.all-rights-reserved {
-    left: 170px;
-}
-
-.group-div1 {
-    position: absolute;
-    top: 323px;
-    left: 585px;
-    width: 271px;
-    height: 12px;
-    font-size: var(--font-size-3xs);
-}
-
-.infoaccretivecom-span {
-    text-decoration: underline;
-}
-
-.infoaccretivecom-div {
-    position: absolute;
-    top: 201px;
-    left: 50px;
-    font-size: 30px;
-    line-height: 22px;
-    display: inline-block;
-}
-
-.group-div {
-    position: absolute;
-    left: 0;
-    width: 1440px;
-}
-
-.group-div {
-    top: 2160px;
-    height: 410px;
-    color: var(--color-gray-200);
-}
-
-.blank-line-p,
-.our-portfolio-includes {
-    margin-block-start: 0;
-    margin-block-end: 0;
-}
-
-.blank-line-p {
-    color: var(--color-gray-400);
-}
-
-.span {
-    color: var(--color-white);
-}
-
-.more-span {
-    color: var(--color-gray-400);
-}
-
-.wilder-world-team-dao-d {
-    margin: 0;
-}
-
-.our-portfolio-includes-wilder {
-    position: absolute;
-    top: 196px;
-    left: 497px;
-    line-height: 42px;
-    display: inline-block;
-    width: 883px;
-    height: 253px;
-}
-
-.line-div1 {
-    position: absolute;
-    top: 64.75px;
-    left: 47.75px;
-    border-top: 0.5px solid var(--color-white);
-    box-sizing: border-box;
-    width: 1345.5px;
-    height: 0.5px;
-}
-
-.our-portfolio-div {
-    position: absolute;
-    top: 90px;
-    left: 72px;
-    font-size: var(--font-size-3xs);
-    line-height: 12px;
-    display: inline-block;
-    width: 84px;
-    height: 10px;
-}
-
-.wilder-world-logo-1 {
-    position: absolute;
-    top: 263px;
-    left: 203px;
-    width: 145px;
-    height: 136px;
-    object-fit: cover;
-}
-
-.ellipse-icon {
-    position: absolute;
-    top: 89px;
-    left: 48px;
-    width: 12px;
-    height: 12px;
-}
-
-.group-div2 {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    top: 1550px;
-    height: 610px;
-    font-size: var(--font-size-sm);
-    background-color: var(--color-gray-300);
-}
-
-.group-div3 {
-    position: absolute;
-    top: 800px;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #2f2f2f;
-    background-size: cover;
-}
-
-.we-build-invest-and-partner,
-.we-provide-advisory-on-tokenom {
-    position: absolute;
-    top: 196px;
-    right: 40px;
-    line-height: 42px;
-    display: inline-block;
-    width: 847px;
-}
-
-.we-provide-advisory-on-tokenom {
-    top: 319px;
-    right: 40px;
-    width: 846px;
-}
-
-.line-div2 {
-    position: absolute;
-    top: 64.75px;
-    left: 47.75px;
-    right: 47.75px;
-    border-top: 0.5px solid var(--color-white);
-    box-sizing: border-box;
-    height: 0.5px;
-}
-
-.about-us-div {
-    position: absolute;
-    top: 90px;
-    left: 72px;
-    font-size: var(--font-size-3xs);
-    line-height: 12px;
-    display: inline-block;
-    width: 111px;
-    height: 10px;
-}
-
-.contact-div,
-.our-portfolio-div1 {
-    position: absolute;
-    top: 492px;
-    right: 865px;
-    font-size: var(--font-size-xs);
-    line-height: 20px;
-    display: inline-block;
-    width: 181px;
-}
-
-.contact-div {
-    top: 561px;
-}
-
-.vector-icon,
-.vector-icon1 {
-    position: absolute;
-    top: 497.82px;
-    right: 190px;
-    width: 17.34px;
-    height: 8.53px;
-}
-
-.vector-icon1 {
-    top: 568.82px;
-}
-
-.group-div3 {
-    position: absolute;
-    top: 800px;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #2f2f2f;
-}
-
-.rectangle-div3 {
-    top: 0;
-    background-color: var(--color-gray-100);
-    height: 800px;
-}
-
-.accretive-div,
-.accretive-is-a-web3-profession {
-    position: absolute;
-    top: 485px;
-    left: 40px;
-    line-height: 80px;
-    display: inline-block;
-    width: 978px;
-    height: 222px;
-}
-
-.accretive-div {
-    top: 45px;
-    font-size: var(--font-size-sm);
-    line-height: 36px;
-    width: 150px;
-    height: 36px;
-}
-
-.about-div {
-    top: 0;
-    left: 0;
-    line-height: 15px;
-    display: inline-block;
-    width: 46px;
-}
-
-.about-div,
-.group-div5,
-.portfolio-div {
-    position: absolute;
-    height: 15px;
-}
-
-.portfolio-div {
-    top: 0;
-    left: 126px;
-    line-height: 15px;
-    display: inline-block;
-    width: 63px;
-}
-
-.group-div5 {
-    top: 56px;
-    right: 40px;
-    width: 189px;
-    font-size: var(--font-size-2xs);
-}
-
-.contact-div1,
-.rectangle-div4 {
-    position: absolute;
-    right: 40px;
-    width: 164px;
-}
-
-.rectangle-div4 {
-    top: 659px;
-    border-radius: 300px;
-    background-color: var(--color-gray-300);
-    height: 58px;
-}
-
-.contact-div1 {
-    top: 669px;
-    font-size: 26px;
-    line-height: 38px;
-    color: var(--color-gray-100);
-    text-align: center;
-    display: inline-block;
-    height: 40px;
-}
-
-.group-div4 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    font-size: 80px;
-    color: var(--color-gray-300);
-    background-color: var(--color-gray-100);
-    background-size: cover;
-}
-
-.accretive-home-page-updated {
-    position: relative;
-    width: 100%;
-    height: 2564px;
-    overflow: hidden;
-    text-align: left;
-    font-size: var(--font-size-base);
-    color: var(--color-white);
-    font-family: var(--font-telegraf);
-} */
-
 @font-face {
   font-family: Telegraf;
   src: url(./fonts/Telegraf.otf);
@@ -418,10 +71,11 @@ button {
   color: var(--color-gray-200);
   margin-top: 2em;
   justify-content: center;
+  width: 92vw;
 }
 
 .copyright > div {
-  margin: 0 1em 0 1em;
+  margin: 0 1em 0 0;
 }
 
 /* For desktop */
@@ -470,6 +124,7 @@ button {
     right: 60px;
     top: 230vh;
     width: 60vw;
+    font-size: 0.8em;
   }
   .navigate-button {
     display: flex;
@@ -490,26 +145,6 @@ button {
   .portfolio-content {
     align-items: center;
   }
-  .footer {
-    margin-top: auto;
-    margin-left: -2em;
-    padding: 2em 0 2em 2em;
-    background-color: var(--color-white);
-    color: black;
-  }
-  .footer-text {
-    font-size: 2em;
-    line-height: 1.2em;
-  }
-  .email {
-    margin: 2em 0 2em 0;
-    color: var(--color-gray-200);
-    font-size: 1.5em;
-    text-decoration: underline;
-  }
-  .footer > .solid {
-    border-top: 0.5px solid #212121;
-  }
   .logo-text {
     font-size: 2em;
   }
@@ -520,6 +155,85 @@ button {
   }
   .show_logo {
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .logo_shown {
+    position: absolute;
+    top: 230vh;
+    width: 25vw;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navigation {
+    display: none !important;
+  }
+  .logo {
+    margin-left: 25.8vw;
+  }
+  .content-1 {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+    margin-top: 20vh;
+    font-size: 2em;
+  }
+  .contact-btn {
+    background-color: var(--color-gray-300);
+    color: var(--color-gray-100);
+    border-radius: 300px;
+    height: 58px;
+    width: 164px;
+    font-size: 1rem;
+    margin: 10vh;
+    margin-left: 23.5vw;
+  }
+  .content-2 {
+    text-align: left;
+    width: 80vw;
+    align-self: flex-start;
+    flex-direction: column;
+    margin-top: 10vh;
+  }
+  .content-text-2 {
+    font-size: 1.5em;
+    line-height: 42px;
+    margin-bottom: 40px;
+    align-items: flex-start;
+  }
+  .navigate-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4em 0 1.4em 0;
+    border-top: 0.5px solid #fff;
+    background-color: none;
+    color: var(--color-white);
+    font-size: 1em;
+  }
+  .footer-text {
+    font-size: 1.5em !important;
+    line-height: 1.2em;
+  }
+  #section-3 {
+    height: 120vh;
+  }
+  .content-3 {
+    position: absolute;
+    top: 260vh;
+    left: 5;
+    width: 90vw;
+    font-size: 1.2em;
+  }
+  .logo_shown {
+    position: absolute;
+    top: 230vh;
+    left: 5;
+    width: 90vw;
+    height: auto;
   }
 }
 
@@ -535,13 +249,27 @@ button {
   padding-right: 5em;
 }
 
-.logo_shown {
-  position: absolute;
-  top: 230vh;
-  width: 25vw;
-  height: auto;
-}
-
 .more_show_logo {
   color: var(--color-gray-400);
+}
+
+.footer {
+  margin-top: auto;
+  margin-left: -2em;
+  padding: 2em 0 2em 2em;
+  background-color: var(--color-white);
+  color: black;
+}
+.footer-text {
+  font-size: 2em;
+  line-height: 1.2em;
+}
+.footer > .solid {
+  border-top: 0.5px solid #212121;
+}
+.email {
+  margin: 2em 0 2em 0;
+  color: var(--color-gray-200);
+  font-size: 1.5em;
+  text-decoration: underline;
 }
