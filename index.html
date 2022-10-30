@@ -59,7 +59,7 @@
                 Contact
                 <img class="dropdown-icon" alt="" src="logo/down-icon.png" />
             </a>
-            <button class="navigate-button"></button>
+            <a class="navigate-button"></a>
         </div>
     </div>
     <div class="section" id="section-3">
@@ -73,7 +73,7 @@
         <div class="content portfolio-content">
             <img class="logo_shown" alt="" src="logo/Wilder World.png" />
             <div data-aos="fade-left" class="content-3">
-                <div class="content-text-2" style="font-size: 1.2em;">
+                <div class="content-text-2" style="font-size: 2em;">
                     Our portfolio includes
                 </div>
                 <div class="logo-text">
@@ -116,7 +116,7 @@
     </div>
     <script>
         AOS.init();
-        $(".show_logo").mouseenter(function () {
+        $(".show_logo").mouseenter(function() {
             if ($(this).children('div.image').length) {
                 $(this).parent('div').parent('div').parent('div').children('div.image').show();
             } else {
@@ -126,7 +126,7 @@
             }
         });
 
-        $(".show_logo").mouseleave(function () {
+        $(".show_logo").mouseleave(function() {
             $(this).parent('div').parent('div').parent('div').children('img').remove();
         });
 
