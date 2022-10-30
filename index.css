@@ -27,9 +27,9 @@ a {
 .section {
   display: flex;
   flex-direction: column;
-  height: 94vh;
+  height: 100vh;
   width: 100vw;
-  padding: 2em 0 2em 2em;
+  /* padding: 2em 0 2em 2em; */
 }
 
 #section-1 {
@@ -42,18 +42,19 @@ a {
 #section-3 {
   background-color: var(--color-gray-300);
   color: var(--color-white);
-  padding: 2em 0 0 2em;
+  padding: 2em 0 0 0;
 }
 
 hr.solid {
   border-top: 0.5px solid #fff;
-  margin: 2em 5em 0 0;
+  margin: 2em 5em 0 5em;
 }
 
 .section-title {
   display: flex;
   flex-direction: row;
   margin-top: 2em;
+  margin-left: 5em;
 }
 
 .ellipse-icon {
@@ -71,11 +72,11 @@ button {
   color: var(--color-gray-200);
   margin-top: 2em;
   justify-content: center;
-  width: 92vw;
+  width: 100vw;
 }
 
 .copyright > div {
-  margin: 0 1em 0 0;
+  margin: 0 1em;
 }
 
 /* For desktop */
@@ -86,10 +87,16 @@ button {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 2em;
+    padding-top: 2em;
+  }
+  .logo {
+    font-size: 2rem;
+    margin-left: 2em;
   }
   .content-1 {
     margin-top: auto;
     color: var(--color-gray-300);
+    margin-left: 4em;
   }
   .content-text {
     font-size: 4em;
@@ -159,6 +166,7 @@ button {
   .logo_shown {
     position: absolute;
     top: 230vh;
+    left: 5vw;
     width: 25vw;
     height: auto;
   }
@@ -169,26 +177,40 @@ button {
     display: none !important;
   }
   .logo {
-    margin-left: 25.8vw;
+    font-size: 2rem;
+    margin-top: 1em;
   }
+  #section-1 {
+    align-items: center;
+    width: 100vw;
+  }
+  .content,
   .content-1 {
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
-    width: 85vw;
-    margin-top: 20vh;
+    margin-top: 30vh;
     font-size: 2em;
+    padding: 0 1em 0 1em;
   }
   .contact-btn {
     background-color: var(--color-gray-300);
     color: var(--color-gray-100);
     border-radius: 300px;
     height: 58px;
-    width: 164px;
+    width: 100%;
     font-size: 1rem;
-    margin: 10vh;
-    margin-left: 23.5vw;
+    margin-top: 30vh;
+  }
+  hr.solid {
+    border-top: 0.5px solid #fff;
+    margin: 2em 2em 0 2em;
+  }
+  .section-title {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2em;
   }
   .content-2 {
     text-align: left;
@@ -198,8 +220,8 @@ button {
     margin-top: 10vh;
   }
   .content-text-2 {
-    font-size: 1.5em;
-    line-height: 42px;
+    font-size: 0.5em;
+    line-height: 36px;
     margin-bottom: 40px;
     align-items: flex-start;
   }
@@ -212,33 +234,43 @@ button {
     border-top: 0.5px solid #fff;
     background-color: none;
     color: var(--color-white);
-    font-size: 1em;
+    font-size: 0.5em;
   }
   .footer-text {
-    font-size: 1.5em !important;
+    font-size: 1em !important;
     line-height: 1.2em;
   }
   #section-3 {
-    height: 120vh;
+    height: 140vh;
   }
   .content-3 {
     position: absolute;
     top: 260vh;
-    left: 5;
+    left: 6vw;
     width: 90vw;
-    font-size: 1.2em;
+    font-size: 0.6em;
   }
   .logo_shown {
     position: absolute;
     top: 230vh;
-    left: 5;
+    left: 6vw;
     width: 90vw;
     height: auto;
   }
-}
-
-.logo {
-  font-size: 2rem;
+  .footer {
+    margin-top: auto;
+    padding: 1em 0 !important;
+    background-color: var(--color-white);
+    color: black;
+  }
+  .email {
+    margin: 2em 0 2em 1.3em !important;
+  }
+  .footer-text {
+    font-size: 2em;
+    line-height: 1.2em;
+    margin-left: 2em !important;
+  }
 }
 
 .navigation {
@@ -255,7 +287,6 @@ button {
 
 .footer {
   margin-top: auto;
-  margin-left: -2em;
   padding: 2em 0 2em 2em;
   background-color: var(--color-white);
   color: black;
@@ -263,12 +294,13 @@ button {
 .footer-text {
   font-size: 2em;
   line-height: 1.2em;
+  margin-left: 2.5em;
 }
 .footer > .solid {
   border-top: 0.5px solid #212121;
 }
 .email {
-  margin: 2em 0 2em 0;
+  margin: 2em 0 2em 3.3em;
   color: var(--color-gray-200);
   font-size: 1.5em;
   text-decoration: underline;
