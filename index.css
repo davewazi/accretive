@@ -346,170 +346,194 @@
 } */
 
 @font-face {
-    font-family: Telegraf;
-    src: url(./fonts/Telegraf.otf);
+  font-family: Telegraf;
+  src: url(./fonts/Telegraf.otf);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {
-    font-family: Telegraf;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    border-width: 0;
+  font-family: Telegraf;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  border-width: 0;
 }
 
 a {
-    text-decoration: none;
-    color: var(--color-gray-300);
+  text-decoration: none;
+  color: var(--color-gray-300);
 }
 
 .section {
-    display: flex;
-    flex-direction: column;
-    height: 94vh;
-    width: 100vw;
-    padding: 2em 0 2em 2em;
+  display: flex;
+  flex-direction: column;
+  height: 94vh;
+  width: 100vw;
+  padding: 2em 0 2em 2em;
 }
 
 #section-1 {
-    background-color: var(--color-gray-100);
+  background-color: var(--color-gray-100);
 }
-
 #section-2 {
-    background-color: #2f2f2f;
-    color: var(--color-white);
+  background-color: #2f2f2f;
+  color: var(--color-white);
 }
-
 #section-3 {
-    background-color: var(--color-gray-300);
-    color: var(--color-white);
-    padding: 2em 0 0 2em;
+  background-color: var(--color-gray-300);
+  color: var(--color-white);
+  padding: 2em 0 0 2em;
 }
 
 hr.solid {
-    border-top: 0.5px solid #fff;
-    margin: 2em 5em 0 0;
+  border-top: 0.5px solid #fff;
+  margin: 2em 5em 0 0;
 }
 
 .section-title {
-    display: flex;
-    flex-direction: row;
-    margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2em;
 }
 
 .ellipse-icon {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 button {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .copyright {
-    display: flex;
-    flex-direction: row;
-    font-size: 0.8em;
-    color: var(--color-gray-200);
-    margin-top: 2em;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 0.8em;
+  color: var(--color-gray-200);
+  margin-top: 2em;
+  justify-content: center;
 }
 
-.copyright>div {
-    margin: 0 1em 0 1em;
+.copyright > div {
+  margin: 0 1em 0 1em;
 }
-
 
 /* For desktop */
-
 @media only screen and (min-width: 768px) {
-    .header,
-    .content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 2em;
-    }
-    .content-1 {
-        margin-top: auto;
-        color: var(--color-gray-300);
-    }
-    .content-text {
-        font-size: 4em;
-        width: 60%;
-    }
-    .contact-btn {
-        align-self: flex-end;
-        background-color: var(--color-gray-300);
-        color: var(--color-gray-100);
-        border-radius: 300px;
-        height: 58px;
-        width: 164px;
-        font-size: 1rem;
-        margin-right: 5em;
-    }
-    .content-2 {
-        text-align: left;
-        width: 60vw;
-        align-self: flex-end;
-        padding-right: 5em;
-        flex-direction: column;
-        margin-top: 20vh;
-    }
-    .content-text-2 {
-        font-size: 2em;
-        line-height: 42px;
-        margin-bottom: 40px;
-        align-items: flex-start;
-    }
-    .navigate-button {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1.4em 0 1.4em 0;
-        border-top: 0.5px solid #fff;
-        background-color: none;
-        color: var(--color-white);
-        font-size: 1em;
-    }
-    .portfolio-logo {
-        max-width: 40vw;
-        max-height: 120px;
-        margin-top: 200px;
-    }
-    .portfolio-content {
-        align-items: center;
-    }
-    .footer {
-        margin-top: auto;
-        margin-left: -2em;
-        padding: 2em 0 2em 2em;
-        background-color: var(--color-white);
-        color: black;
-    }
-    .footer-text {
-        font-size: 2em;
-        line-height: 1.2em;
-    }
-    .email {
-        margin: 2em 0 2em 0;
-        color: var(--color-gray-200);
-        font-size: 1.5em;
-        text-decoration: underline;
-    }
-    .footer>.solid {
-        border-top: 0.5px solid #212121;
-    }
+  .header,
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2em;
+  }
+  .content-1 {
+    margin-top: auto;
+    color: var(--color-gray-300);
+  }
+  .content-text {
+    font-size: 4em;
+    width: 60%;
+  }
+  .contact-btn {
+    align-self: flex-end;
+    background-color: var(--color-gray-300);
+    color: var(--color-gray-100);
+    border-radius: 300px;
+    height: 58px;
+    width: 164px;
+    font-size: 1rem;
+    margin-right: 5em;
+  }
+  .content-2 {
+    text-align: left;
+    width: 60vw;
+    align-self: flex-end;
+    padding-right: 5em;
+    flex-direction: column;
+    margin-top: 20vh;
+  }
+  .content-text-2 {
+    font-size: 2em;
+    line-height: 42px;
+    margin-bottom: 40px;
+    align-items: flex-start;
+  }
+  .content-3 {
+    position: absolute;
+    right: 100px;
+    top: 230vh;
+    width: 60vw;
+  }
+  .navigate-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4em 0 1.4em 0;
+    border-top: 0.5px solid #fff;
+    background-color: none;
+    color: var(--color-white);
+    font-size: 1em;
+  }
+  .portfolio-logo {
+    max-width: 40vw;
+    max-height: 120px;
+    margin-top: 200px;
+  }
+  .portfolio-content {
+    align-items: center;
+  }
+  .footer {
+    margin-top: auto;
+    margin-left: -2em;
+    padding: 2em 0 2em 2em;
+    background-color: var(--color-white);
+    color: black;
+  }
+  .footer-text {
+    font-size: 2em;
+    line-height: 1.2em;
+  }
+  .email {
+    margin: 2em 0 2em 0;
+    color: var(--color-gray-200);
+    font-size: 1.5em;
+    text-decoration: underline;
+  }
+  .footer > .solid {
+    border-top: 0.5px solid #212121;
+  }
+  .logo-text {
+    font-size: 2em;
+  }
+  .show_logo:hover {
+    color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .show_logo {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
 }
 
 .logo {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .navigation {
-    display: flex;
+  display: flex;
 }
 
-.navigation>a {
-    padding-right: 5em;
+.navigation > a {
+  padding-right: 5em;
+}
+
+.logo_shown {
+  position: absolute;
+  top: 230vh;
+  width: 25vw;
+  height: 100px;
 }
