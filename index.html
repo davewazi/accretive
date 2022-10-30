@@ -9,7 +9,9 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="./global.css" />
     <link rel="stylesheet" href="./index.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -34,12 +36,12 @@
     <div class="section" id="section-2">
         <hr class="solid" />
 
-        <div class="section-title">
+        <div data-aos="fade-down" class="section-title">
             <img class="ellipse-icon" alt="" src="public/ellipse-65.svg" />
             <div class="about-us-div">About Us</div>
         </div>
 
-        <div class="content content-2">
+        <div data-aos="fade-left" class="content content-2">
             <div class="content-text-2">
                 We build, invest, and partner with high potential Web3 founders and their ambitious projects.
             </div>
@@ -60,49 +62,19 @@
     <div class="section" id="section-3">
         <hr class="solid" />
 
-        <!-- <div class="group-div2">
-            <div class="our-portfolio-includes-wilder">
-                <p class="our-portfolio-includes">
-                    <span>Our portfolio includes</span>
-                </p>
-                <p class="blank-line-p"><span>&nbsp;</span></p>
-                <p class="wilder-world-team-dao-d">
-                <div class="logo-text">
-                    <span class="show_logo" data-image="./logo/Wilder World.png">Wilder World</span> •
-                    <span class="show_logo" data-image="./logo/T.E.A.M DAO.png"> T.E.A.M DAO</span> •
-                    <span class="show_logo" data-image="./logo/DayAway.png">DayAway</span> •
-                    <span class="show_logo" data-image="./logo/GSG Asset.png">GSG Asset</span> •
-                    <span class="show_logo" data-image="./logo/Scenius Capital.png">Scenius Capital</span> •
-                    <span class="show_logo" data-image="./logo/Simulacrum.png">Simulacrum</span> •
-                    <span class="show_logo" data-image="./logo/HEAT.png">HEAT</span> •
-                    <span class="show_logo" data-image="./logo/Million on Mars.png">Million on Mars</span> •
-                    <span class="show_logo" data-image="./logo/Proto Reality Games.png">PRG</span> •
-                    <span class="show_logo" data-image="./logo/CoinFund.png">CoinFund</span> •
-                    <span class="show_logo" data-image="./logo/Spartan.png">Spartan</span> •
-                    <span class="show_logo" data-image="./logo/AntiFund.png">Anti Fund</span> •
-                    <span class="show_logo" data-image="./logo/Metaversal.png">Metaversal</span> •
-                    <span class="show_logo" data-image="./logo/Superplastic.png">Superplastic</span> •
-                    <span class="show_logo" data-image="./logo/BitCountry.png">Bit.Country</span> •
-                    <span class="show_logo" data-image="./logo/NFT.png">NFTs</span> •
-                </div>
-                </p>
-            </div>
-            <img class="logo_shown" alt="" src="logo/Wilder World.png" />
-            <div class="our-portfolio-div">Our Portfolio</div>
-        </div> -->
-
-        <div class="section-title">
+        <div data-aos="fade-down" class="section-title">
             <img class="ellipse-icon" alt="" src="public/ellipse-65.svg" />
             <div class="about-us-div">Our Portfolio</div>
         </div>
 
         <div class="content portfolio-content">
-            <div class="content-3">
+            <!-- <img class="logo_shown" alt="" src="logo/Wilder World.png" /> -->
+            <div data-aos="fade-left" class="content-3">
                 <div class="content-text-2">
                     Our portfolio includes
                 </div>
                 <div class="logo-text">
-                    <span class="show_logo" data-image="./logo/Wilder World.png">Wilder World</span> •
+                    <span class="show_logo default_hovered" data-image="./logo/Wilder World.png">Wilder World</span> •
                     <span class="show_logo" data-image="./logo/T.E.A.M DAO.png"> T.E.A.M DAO</span> •
                     <span class="show_logo" data-image="./logo/DayAway.png">DayAway</span> •
                     <span class="show_logo" data-image="./logo/GSG Asset.png">GSG Asset</span> •
@@ -117,7 +89,8 @@
                     <span class="show_logo" data-image="./logo/Metaversal.png">Metaversal</span> •
                     <span class="show_logo" data-image="./logo/Superplastic.png">Superplastic</span> •
                     <span class="show_logo" data-image="./logo/BitCountry.png">Bit.Country</span> •
-                    <span class="show_logo" data-image="./logo/NFT.png">NFTs</span> •
+                    <span class="show_logo" data-image="./logo/NFT.png">NFTs</span>
+                    <span class="more_show_logo" data-image="./logo/NFT.png">+ more</span>
                 </div>
             </div>
         </div>
@@ -139,6 +112,7 @@
         </div>
     </div>
     <script>
+        AOS.init();
         $(".show_logo").mouseenter(function () {
             if ($(this).children('div.image').length) {
                 $(this).parent('div').parent('div').parent('div').children('div.image').show();
@@ -152,6 +126,13 @@
         $(".show_logo").mouseleave(function () {
             $(this).parent('div').parent('div').parent('div').children('img').remove();
         });
+
+        // var firstsec = document.getElementById('section-1');
+        // var secondsec = document.getElementById('section-2');
+        // var thirdsec = document.getElementById('section-3');
+        // document.onscroll = function scroll() {
+        //     firstsec.scrollIntoView({ behavior: "smooth" });
+        // }
     </script>
 </body>
 

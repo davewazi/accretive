@@ -362,6 +362,10 @@ html {
   border-width: 0;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 a {
   text-decoration: none;
   color: var(--color-gray-300);
@@ -463,7 +467,7 @@ button {
   }
   .content-3 {
     position: absolute;
-    right: 100px;
+    right: 60px;
     top: 230vh;
     width: 60vw;
   }
@@ -535,5 +539,9 @@ button {
   position: absolute;
   top: 230vh;
   width: 25vw;
-  height: 100px;
+  height: auto;
+}
+
+.more_show_logo {
+  color: var(--color-gray-400);
 }
