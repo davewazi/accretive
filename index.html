@@ -52,7 +52,7 @@
                 We provide advisory on tokenomics, fundraising, strategy, partnerships and more.
             </div>
             <a href="#section-3" class="navigate-button">
-                Our Portfolio
+                Portfolio
                 <img class="dropdown-icon" alt="" src="logo/down-icon.png" />
             </a>
             <a href="mailto:info@accretive.com" class="navigate-button">
@@ -67,33 +67,34 @@
 
         <div data-aos="fade-down" class="section-title">
             <img class="ellipse-icon" alt="" src="public/ellipse-65.svg" />
-            <div class="about-us-div">Our Portfolio</div>
+            <div class="about-us-div">Portfolio</div>
         </div>
 
         <div class="content portfolio-content">
-            <img class="logo_shown" alt="" src="logo/Wilder World.png" />
+            <img id="default_logo" class="logo_shown" alt="" src="./logo/logoV2/accretive-logo.png" />
             <div data-aos="fade-left" class="content-3">
                 <div class="content-text-2" style="font-size: 2em;">
-                    Our portfolio includes
+                    Portfolio includes
                 </div>
                 <div class="logo-text">
-                    <span class="show_logo default_hovered" data-image="./logo/Wilder World.png">Wilder World</span> •
-                    <span class="show_logo" data-image="./logo/T.E.A.M DAO.png"> T.E.A.M DAO</span> •
-                    <span class="show_logo" data-image="./logo/DayAway.png">DayAway</span> •
-                    <span class="show_logo" data-image="./logo/GSG Asset.png">GSG Asset</span> •
-                    <span class="show_logo" data-image="./logo/Scenius Capital.png">Scenius Capital</span> •
-                    <span class="show_logo" data-image="./logo/Simulacrum.png">Simulacrum</span> •
-                    <span class="show_logo" data-image="./logo/HEAT.png">HEAT</span> •
-                    <span class="show_logo" data-image="./logo/Million on Mars.png">Million on Mars</span> •
-                    <span class="show_logo" data-image="./logo/Proto Reality Games.png">PRG</span> •
-                    <span class="show_logo" data-image="./logo/CoinFund.png">CoinFund</span> •
-                    <span class="show_logo" data-image="./logo/Spartan.png">Spartan</span> •
-                    <span class="show_logo" data-image="./logo/AntiFund.png">Anti Fund</span> •
-                    <span class="show_logo" data-image="./logo/Metaversal.png">Metaversal</span> •
-                    <span class="show_logo" data-image="./logo/Superplastic.png">Superplastic</span> •
-                    <span class="show_logo" data-image="./logo/BitCountry.png">Bit.Country</span> •
-                    <span class="show_logo" data-image="./logo/NFT.png">NFTs</span>
-                    <span class="more_show_logo" data-image="./logo/NFT.png">+ more</span>
+                    <span class="show_logo default_hovered" data-image="./logo/logoV2/Wilder World.png">Wilder
+                        World</span> •
+                    <span class="show_logo" data-image="./logo/logoV2/T.E.A.M DAO.png"> T.E.A.M DAO</span> •
+                    <span class="show_logo" data-image="./logo/logoV2/DayAway.png">DayAway</span> •
+                    <span class="show_logo" data-image="./logo/logoV2/GSG Asset.png">GSG Asset</span> •
+                    <span class="show_logo" data-image="./logo/logoV2/Scenius Capital.png">Scenius Capital</span> •
+                    <span class="show_logo" data-image="./logo/logoV2/Simulacrum.png">Simulacrum</span> •
+                    <span class="show_logo" data-image="./logo/logoV2/HEAT.png">HEAT</span> •
+                    <span class="show_logo" data-image="./logo/logoV2/Million on Mars.png">Million on Mars</span> •
+                    <span class="show_logo" data-image="./logo/logoV2/Proto Reality Games.png">PRG</span> •
+                    <span class="show_logo" data-image="./logo/logoV2/CoinFund.png">CoinFund</span> •
+                    <span class="show_logo" data-image="./logo/logoV2/Spartan.png">Spartan</span> •
+                    <span class="show_logo" data-image="./logo/logoV2/AntiFund.png">Anti Fund</span> •
+                    <span class="show_logo" data-image="./logo/logoV2/Metaversal.png">Metaversal</span> •
+                    <span class="show_logo" data-image="./logo/logoV2/Superplastic.png">Superplastic</span> •
+                    <span class="show_logo" data-image="./logo/logoV2/BitCountry.png">Bit.Country</span> •
+                    <span class="show_logo" data-image="./logo/logoV2/NFT.png">NFTs</span>
+                    <span class="more_show_logo" data-image="./logo/logoV2/NFT.png">+ more</span>
                 </div>
             </div>
         </div>
@@ -122,20 +123,14 @@
             } else {
                 var image_name = $(this).data('image');
                 var imageTag = '<img class="logo_shown" src="' + image_name + '" alt="image" />';
-                $(this).parent('div').parent('div').parent('div').prepend(imageTag)
+                $("#default_logo").replaceWith(imageTag);
             }
         });
 
         $(".show_logo").mouseleave(function() {
-            $(this).parent('div').parent('div').parent('div').children('img').remove();
+            console.log('hehe');
+            $(this).parent('div').parent('div').parent('div').children('img').replaceWith('<img id="default_logo" class="logo_shown" alt="" src="./logo/logoV2/Default.png" />');
         });
-
-        // var firstsec = document.getElementById('section-1');
-        // var secondsec = document.getElementById('section-2');
-        // var thirdsec = document.getElementById('section-3');
-        // document.onscroll = function scroll() {
-        //     firstsec.scrollIntoView({ behavior: "smooth" });
-        // }
     </script>
 </body>
 
