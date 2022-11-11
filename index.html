@@ -71,30 +71,31 @@
         </div>
 
         <div class="content portfolio-content">
-            <img id="default_logo" class="logo_shown" alt="" src="./logo/logoV2/accretive-logo.png" />
+            <img id="default_logo" class="logo_shown" alt="" src="./logo/logoV2/Default.png" />
             <div data-aos="fade-left" class="content-3">
                 <div class="content-text-2" style="font-size: 2em;">
                     Portfolio includes
                 </div>
                 <div class="logo-text">
-                    <span class="show_logo default_hovered" data-image="./logo/logoV2/Wilder World.png">Wilder
-                        World</span> •
-                    <span class="show_logo" data-image="./logo/logoV2/T.E.A.M DAO.png"> T.E.A.M DAO</span> •
-                    <span class="show_logo" data-image="./logo/logoV2/DayAway.png">DayAway</span> •
-                    <span class="show_logo" data-image="./logo/logoV2/GSG Asset.png">GSG Asset</span> •
-                    <span class="show_logo" data-image="./logo/logoV2/Scenius Capital.png">Scenius Capital</span> •
-                    <span class="show_logo" data-image="./logo/logoV2/Simulacrum.png">Simulacrum</span> •
-                    <span class="show_logo" data-image="./logo/logoV2/HEAT.png">HEAT</span> •
-                    <span class="show_logo" data-image="./logo/logoV2/Million On Mars.png">Million on Mars</span> •
-                    <span class="show_logo" data-image="./logo/logoV2/Proto Reality Games.png">PRG</span> •
-                    <span class="show_logo" data-image="./logo/logoV2/CoinFund.png">CoinFund</span> •
-                    <span class="show_logo" data-image="./logo/logoV2/Spartan.png">Spartan</span> •
-                    <span class="show_logo" data-image="./logo/logoV2/AntiFund.png">Anti Fund</span> •
-                    <span class="show_logo" data-image="./logo/logoV2/Metaversal.png">Metaversal</span> •
-                    <span class="show_logo" data-image="./logo/logoV2/Superplastic.png">Superplastic</span> •
-                    <span class="show_logo" data-image="./logo/logoV2/BitCountry.png">Bit.Country</span> •
-                    <span class="show_logo" data-image="./logo/logoV2/NFT.png">NFTs</span>
-                    <span class="more_show_logo" data-image="./logo/logoV2/NFT.png">+ more</span>
+                    <a href="https://www.wilderworld.com/" class="show_logo default_hovered" data-image="./logo/logoV2/Wilder World.png">Wilder
+                        World</a> •
+                    <a href="https://www.teamdao.com/" class="show_logo" data-image="./logo/logoV2/T.E.A.M DAO.png"> T.E.A.M DAO</a> •
+                    <a href="https://mydayaway.com/" class="show_logo" data-image="./logo/logoV2/DayAway.png">DayAway</a> •
+                    <a href="https://www.gsgasset.com/" class="show_logo" data-image="./logo/logoV2/GSG Asset.png">GSG Asset</a> •
+                    <a href="https://scenius.capital/" class="show_logo" data-image="./logo/logoV2/Scenius Capital.png">Scenius Capital</a> •
+                    <a href="http://simulacrum.co/" class="show_logo" data-image="./logo/logoV2/Simulacrum.png">Simulacrum</a> •
+                    <a href="https://heat.tech/" class="show_logo" data-image="./logo/logoV2/HEAT.png">HEAT</a> •
+                    <a href="https://www.milliononmars.com/" class="show_logo" data-image="./logo/logoV2/Million On Mars.png">Million on Mars</a> •
+                    <a href="https://protorealitygames.com/" class="show_logo" data-image="./logo/logoV2/Proto Reality Games.png">PRG</a> •
+                    <a href="https://www.coinfund.io/" class="show_logo" data-image="./logo/logoV2/CoinFund.png">CoinFund</a> •
+                    <a href="https://spartangroup.io/" class="show_logo" data-image="./logo/logoV2/Spartan.png">Spartan</a> •
+                    <a href="https://www.antifund.vc/" class="show_logo" data-image="./logo/logoV2/AntiFund.png">Anti Fund</a> •
+                    <a href="https://www.metaversal.gg/" class="show_logo" data-image="./logo/logoV2/Metaversal.png">Metaversal</a> •
+                    <a href="https://superplastic.co/" class="show_logo" data-image="./logo/logoV2/Superplastic.png">Superplastic</a> •
+                    <a href="https://bit.country/" class="show_logo" data-image="./logo/logoV2/BitCountry.png">Bit.Country</a> •
+                    <a href="https://opensea.io/accretive.eth" class="show_logo" data-image="./logo/logoV2/NFT.png">NFTs</a> •
+                    <a href="" class="show_logo" data-image="./logo/logoV2/BLVRD.png">BLVRD</a>
+                    <span class="more_show_logo">+ more</span>
                 </div>
             </div>
         </div>
@@ -117,20 +118,34 @@
     </div>
     <script>
         AOS.init();
-        $(".show_logo").mouseenter(function() {
+        // $(".show_logo").mouseenter(function () {
+        //     if ($(this).children('div.image').length) {
+        //         $(this).parent('div').parent('div').parent('div').children('div.image').show();
+        //     } else {
+        //         var image_name = $(this).data('image');
+        //         var imageTag = '<img class="logo_shown" src="' + image_name + '" alt="image" />';
+        //         $("#default_logo").replaceWith(imageTag);
+        //     }
+        // }).mouseleave(function () {
+        //     console.log('hehe');
+        //     $(this).parent('div').parent('div').parent('div').children('img').replaceWith('<img id="default_logo" class="logo_shown" alt="" src="./logo/logoV2/Default.png" />');
+        // });
+
+        $(".show_logo").mouseenter(function () {
             if ($(this).children('div.image').length) {
                 $(this).parent('div').parent('div').parent('div').children('div.image').show();
             } else {
-                var image_name = $(this).data('image');
+                var image_name = $(this).attr('data-image');
                 var imageTag = '<img class="logo_shown" src="' + image_name + '" alt="image" />';
-                $("#default_logo").replaceWith(imageTag);
+                console.log('NghiaLog: image_name - ', image_name);
+                $("#default_logo").attr("src", image_name);
             }
-        });
+        })
 
-        $(".show_logo").mouseleave(function() {
-            console.log('hehe');
-            $(this).parent('div').parent('div').parent('div').children('img').replaceWith('<img id="default_logo" class="logo_shown" alt="" src="./logo/logoV2/Default.png" />');
-        });
+        // $(".show_logo").mouseleave(function() {
+        //     console.log('hehe');
+        //     $(this).parent('div').parent('div').parent('div').children('img').replaceWith('<img id="default_logo" class="logo_shown" alt="" src="./logo/logoV2/Default.png" />');
+        // });
     </script>
 </body>
 
