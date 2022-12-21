@@ -244,7 +244,7 @@ button {
     line-height: 1.2em;
   }
   #section-3 {
-    height: 140vh;
+    height: max-content;
   }
   .content-3 {
     /* position: absolute;
@@ -285,7 +285,7 @@ button {
     align-items: center;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin-top: 10vh !important;
   }
 }
